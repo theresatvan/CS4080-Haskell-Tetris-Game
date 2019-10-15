@@ -1,0 +1,17 @@
+Name:                Tetris
+Version:             0.1.0.0
+Cabal-version:       >= 1.10
+License:
+License-file:
+Author:              Aatena Hasan, Annie Wu, Theresa Van
+Synopsis:            Group project for CS 4080
+Build-type:          Simple
+Extra-source-files:  README.md
+
+Executable Tetris
+  Main-is:             Tetris.hs
+  Other-modules:       ConsoleGUI, GameInterface, Shapes
+  Other-extensions:    CPP, ForeignFunctionInterface, BlockArguments
+  Build-depends:       base >=4.12 && <4.13, QuickCheck, random, directory, ansi-terminal
+  Hs-source-dirs:      src
+  Default-language:    Haskell2010
